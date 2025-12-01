@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AutoMax — Automação com Python</title>
+  <meta name="description" content="Automatizo tarefas chatas da sua empresa com Python. Relatórios, bots, raspagem, organização de arquivos e mais."/>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden>AM</div>
+        <div>
+          <h1>AutoMax</h1>
+          <div class="small muted">Automação com Python — rápida e direta</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a class="btn ghost" href="#exemplos">Exemplos</a>
+        <a class="btn" id="btnContact" href="#contato">Quero automatizar</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" aria-label="Hero">
+        <div class="hero-left">
+          <div class="kicker">AutoMax — Automatiza e liberta</div>
+          <h2 class="hero-title">Automatizo tarefas chatas. Você foca no que faz dinheiro.</h2>
+          <p class="hero-sub">Chega de copiar/colar. Scripts leves em Python que fazem o trabalho repetitivo, sem drama.</p>
+          <div class="hero-ctas">
+            <a class="btn" href="#contato">Quero automatizar agora</a>
+            <a class="btn ghost" href="#exemplos">Ver demos</a>
+          </div>
+
+          <div style="margin-top:18px" class="small">
+            <strong>Serviços rápidos:</strong> Relatórios, bots de WhatsApp, raspagem de preços, organização de arquivos, cadastros automáticos.
+          </div>
+        </div>
+
+        <aside class="hero-right" aria-hidden>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <div class="feature-list">
+              <div class="feature">
+                <div style="width:12px;height:12px;background:var(--accent);border-radius:4px"></div>
+                <div>
+                  <strong>Relatórios</strong><div class="small muted">PDFs e envios agendados</div>
+                </div>
+              </div>
+              <div class="feature">
+                <div style="width:12px;height:12px;background:var(--accent);border-radius:4px"></div>
+                <div>
+                  <strong>WhatsApp</strong><div class="small muted">Lembretes e confirmações</div>
+                </div>
+              </div>
+              <div class="feature">
+                <div style="width:12px;height:12px;background:var(--accent);border-radius:4px"></div>
+                <div>
+                  <strong>Raspagem</strong><div class="small muted">Preços e estoque</div>
+                </div>
+              </div>
+              <div class="feature">
+                <div style="width:12px;height:12px;background:var(--accent);border-radius:4px"></div>
+                <div>
+                  <strong>Organização</strong><div class="small muted">Arquivos e notas fiscais</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="display:flex;gap:10px;align-items:center;justify-content:space-between">
+              <div>
+                <div class="pill">Comece com demo</div>
+                <div class="small muted" style="margin-top:6px">Mostre ao dono o resultado sem vender nada.</div>
+              </div>
+              <div style="text-align:right">
+                <div style="font-weight:800;font-size:18px">Rápido</div>
+                <div class="small muted">Entrega em dias</div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <!-- O QUE FAÇO -->
+      <section aria-label="O que eu faço" style="margin-top:8px">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px">
+          <h2 style="margin:0">O que eu faço</h2>
+          <div class="small muted">Soluções enxutas, sem sistema pesado.</div>
+        </div>
+
+        <div class="grid-2" style="gap:18px">
+          <div style="background:var(--card);padding:16px;border-radius:12px">
+            <p class="small muted">Eu transformo tarefas repetitivas em scripts que rodam sozinhos — você só confere o resultado.</p>
+            <ul style="margin:12px 0 0 18px;color:var(--muted)">
+              <li>Relatórios automáticos (Excel → PDF → E-mail)</li>
+              <li>Bots de WhatsApp para lembretes e confirmação</li>
+              <li>Raspagem de preços e atualização</li>
+              <li>Organização automática de pastas e notas fiscais</li>
+              <li>Cadastros automáticos e integrações simples</li>
+            </ul>
+          </div>
+          <div style="background:var(--card);padding:16px;border-radius:12px">
+            <h3 style="margin:0 0 8px 0">Quem se beneficia</h3>
+            <p class="small muted" style="margin:0 0 12px 0">Lojas, restaurantes, clínicas, contabilidade, e qualquer negócio que repete processos todos os dias.</p>
+            <div style="display:flex;gap:8px;flex-wrap:wrap">
+              <div class="pill">Economia de tempo</div>
+              <div class="pill">Menos erro humano</div>
+              <div class="pill">Entrega rápida</div>
+              <div class="pill">Baixo custo inicial</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXEMPLOS -->
+      <section id="exemplos" aria-label="Exemplos de automação" style="margin-top:18px">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+          <h2 style="margin:0">Exemplos de automações</h2>
+          <div class="small muted">Demos curtas — substitua os vídeos pelos seus.</div>
+        </div>
+
+        <div class="cards" style="margin-bottom:12px">
+          <!-- Card 1 -->
+          <article class="card" aria-labelledby="r1">
+            <h3 id="r1">Automação de Relatórios</h3>
+            <p>Planilha → script → PDF enviado por e-mail todo dia.</p>
+            <!-- Substitua src pelo seu arquivo demo: demos/report_demo.mp4 -->
+            <video controls muted playsinline poster="" preload="metadata">
+              <source src="demos/report_demo.mp4" type="video/mp4" />
+              Seu navegador não suporta o elemento de vídeo. Coloque uma imagem demonstrativa aqui.
+            </video>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card" aria-labelledby="r2">
+            <h3 id="r2">Bot de WhatsApp</h3>
+            <p>Enviar lembretes e confirmações diretamente pelo WhatsApp Web / API.</p>
+            <video controls muted playsinline preload="metadata">
+              <source src="demos/whatsapp_demo.mp4" type="video/mp4" />
+            </video>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card" aria-labelledby="r3">
+            <h3 id="r3">Raspagem de Preços</h3>
+            <p>Coleta de preços da concorrência e geração de planilha com resumo.</p>
+            <video controls muted playsinline preload="metadata">
+              <source src="demos/scrape_demo.mp4" type="video/mp4" />
+            </video>
+          </article>
+        </div>
+
+        <div class="cards" style="margin-top:12px">
+          <article class="card" aria-labelledby="r4">
+            <h3 id="r4">Organizador de Pastas</h3>
+            <p>Monitora pasta e organiza arquivos automaticamente por tipo/data.</p>
+            <video controls muted playsinline preload="metadata">
+              <source src="demos/organizer_demo.mp4" type="video/mp4" />
+            </video>
+          </article>
+
+          <article class="card" aria-labelledby="r5">
+            <h3 id="r5">Cadastro Automático</h3>
+            <p>Planilha → formulário / sistema, sem copiar e colar.</p>
+            <video controls muted playsinline preload="metadata">
+              <source src="demos/cad_demo.mp4" type="video/mp4" />
+            </video>
+          </article>
+
+          <article class="card" aria-labelledby="r6">
+            <h3 id="r6">Relatório Financeiro</h3>
+            <p>Extrato CSV → análise → PDF com gráficos prontos.</p>
+            <video controls muted playsinline preload="metadata">
+              <source src="demos/finance_demo.mp4" type="video/mp4" />
+            </video>
+          </article>
+        </div>
+      </section>
+
+      <!-- COMO FUNCIONA -->
+      <section aria-label="Como funciona" style="margin-top:18px">
+        <h2>Como funciona</h2>
+        <div class="steps" style="margin-top:12px">
+          <div class="step">
+            <strong>1. Você descreve a tarefa</strong>
+            <p class="small muted">Envie uma planilha ou explique o processo. Pode ser mensagem curta.</p>
+          </div>
+          <div class="step">
+            <strong>2. Eu crio a automação</strong>
+            <p class="small muted">Script em Python, teste local e vídeo demonstrativo pra você aprovar.</p>
+          </div>
+          <div class="step">
+            <strong>3. Entrega & suporte</strong>
+            <p class="small muted">Instalo/entrego script + instruções. Suporte inicial para colocar pra rodar.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section style="margin-top:18px">
+        <div class="cta-block">
+          <div>
+            <h3 style="margin:0">Quer economizar tempo de verdade?</h3>
+            <div class="small muted">Clique e manda uma mensagem com: "Quero automatizar [descrição curta]"</div>
+          </div>
+          <div style="display:flex;gap:8px">
+            <a class="btn" id="whatsappBtn" href="#">Chamar no WhatsApp</a>
+            <a class="btn ghost" href="#exemplos">Ver demos</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTATO -->
+      <section id="contato" aria-label="Contato" style="margin-top:18px">
+        <h2>Falar com a AutoMax</h2>
+        <div style="display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:12px">
+          <form id="contactForm" style="background:var(--card);padding:16px;border-radius:12px">
+            <label class="small muted" for="name">Seu nome</label>
+            <input id="name" name="name" required placeholder="Ex: João" style="width:100%;padding:10px;margin:8px 0;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:#fff" />
+
+            <label class="small muted" for="email">E-mail (opcional)</label>
+            <input id="email" name="email" type="email" placeholder="exemplo@dominio.com" style="width:100%;padding:10px;margin:8px 0;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:#fff" />
+
+            <label class="small muted" for="message">O que quer automatizar? (resumo)</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Ex: Quero gerar relatório diário das vendas..." style="width:100%;padding:10px;margin:8px 0;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:#fff"></textarea>
+
+            <div style="display:flex;gap:8px;align-items:center;margin-top:8px">
+              <button type="submit" class="btn">Enviar mensagem</button>
+              <div class="small muted">ou</div>
+              <a id="whatsappInline" class="btn" href="#">Abrir no WhatsApp</a>
+            </div>
+
+            <div class="small muted" style="margin-top:10px">Recebe resposta no WhatsApp ou no e-mail. Sem enrolação.</div>
+          </form>
+
+          <aside style="background:var(--card);padding:16px;border-radius:12px">
+            <h3 style="margin:0 0 8px 0">Detalhes rápidos</h3>
+            <p class="small muted" style="margin:0 0 12px 0">Preço inicial de prova: a partir de R$300 (dependendo da automação).</p>
+            <ul class="small muted" style="margin:0 0 12px 18px">
+              <li>Entrega de prova em até alguns dias</li>
+              <li>Suporte inicial para instalação</li>
+              <li>Opção de manutenção mensal</li>
+            </ul>
+            <div style="margin-top:12px" class="small muted">Dica: substitua os vídeos das demos pelos seus próprios arquivos em `demos/`.</div>
+          </aside>
+        </div>
+      </section>
+
+      <footer>
+        <div>© <strong>AutoMax</strong> — Automação com Python</div>
+        <div class="small muted">Feito pra parar de perder tempo.</div>
+      </footer>
+    </main>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
