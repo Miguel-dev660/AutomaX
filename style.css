@@ -148,18 +148,20 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden; /* 🔥 IMPORTANTE */
+  overflow: hidden;
 }
 
 .logo img {
-  max-height: 80%; /* 🔥 controla tamanho dentro */
-  width: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* 🔥 garante que nunca vaze */
   display: block;
 }
-.logo:hover {/* M: Efeito hover no logo */
-  transform: rotate(-5deg) scale(1.05);/* M: Rotaciona -5° e aumenta 5% */
-  box-shadow: 0 12px 40px rgba(225,27,35,0.4);/* M: Sombra mais intensa */
-}/* M: Fim hover logo */
+
+.logo:hover {
+  transform: rotate(-5deg) scale(1.02); /* escala menor */
+  box-shadow: 0 12px 40px rgba(225,27,35,0.4);
+}
 
 .brand h1 {
   margin: 0;
