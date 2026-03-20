@@ -140,14 +140,15 @@ header {
   gap: 12px;
   align-items: center;
 }
+.logo {
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
 
 .logo img {
   height: 36px;
   width: auto;
+  display: block;
 }
-  transition: transform var(--transition-normal), box-shadow var(--transition-normal);/* M: Transição suave para hover */
-}
-
 .logo:hover {/* M: Efeito hover no logo */
   transform: rotate(-5deg) scale(1.05);/* M: Rotaciona -5° e aumenta 5% */
   box-shadow: 0 12px 40px rgba(225,27,35,0.4);/* M: Sombra mais intensa */
