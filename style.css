@@ -807,13 +807,19 @@ footer {
     font-size: 16px;
   }
   .logo {
-    width: 48px;
-    height: 48px;
-    font-size: 16px;
-  }
-  .hero-title {
-    font-size: 22px;
-  }
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: linear-gradient(135deg,var(--accent),var(--accent-600));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  height: 30px;
+  width: auto;
+}
   .grid-2 {/* M: Grid 2 vira 1 coluna em mobile */
     grid-template-columns: 1fr;/* M: 1 coluna */
   }/* M: Fim grid mobile */
