@@ -151,14 +151,14 @@ header {
   justify-content: center;
 }
 
-.logo img {
+. img {
   height: 40px;
   width: auto;
 }
-.logo:hover {/* M: Efeito hover no logo */
+.:hover {/* M: Efeito hover no  */
   transform: rotate(-5deg) scale(1.05);/* M: Rotaciona -5° e aumenta 5% */
   box-shadow: 0 12px 40px rgba(225,27,35,0.4);/* M: Sombra mais intensa */
-}/* M: Fim hover logo */
+}/* M: Fim hover  */
 
 .brand h1 {
   margin: 0;
@@ -806,19 +806,14 @@ footer {
   .brand h1 {
     font-size: 16px;
   }
-  .logo {
-  width: 56px;
-  height: 56px;
-  border-radius: 12px;
+. {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
   background: linear-gradient(135deg,var(--accent),var(--accent-600));
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.logo img {
-  height: 30px;
-  width: auto;
 }
   .grid-2 {/* M: Grid 2 vira 1 coluna em mobile */
     grid-template-columns: 1fr;/* M: 1 coluna */
