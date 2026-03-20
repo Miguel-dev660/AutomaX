@@ -142,9 +142,9 @@ header {
 }
 
 .logo {
-  width: 48px;
-  height: 48px;
-  border-radius: 10px;
+  width: 70px;
+  height: 70px;
+  border-radius: 14px;
   background: linear-gradient(135deg,var(--accent),var(--accent-600));
   display: flex;
   align-items: center;
@@ -152,7 +152,7 @@ header {
 }
 
 .logo img {
-  height: 24px;
+  height: 40px;
   width: auto;
 }
 .logo:hover {/* M: Efeito hover no logo */
