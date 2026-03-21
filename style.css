@@ -141,8 +141,8 @@ header {
   align-items: center;
 }
 .logo {
-  width: 70px;
-  height: 70px;
+  width: 48px;
+  height: 48px;
   border-radius: 10px;
   background: linear-gradient(135deg,var(--accent),var(--accent-600));
   display: flex;
