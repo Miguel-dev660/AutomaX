@@ -5,55 +5,64 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>AutoMax — Automação com Python</title>
   <meta name="description" content="Automatizo tarefas chatas da sua empresa com Python. Relatórios, bots, raspagem, organização de arquivos e mais."/>
-  <meta name="keywords" content="automação, python, bots, whatsapp, relatórios automáticos, raspagem de dados" />
-  <meta name="author" content="AutoMax" />
-  <meta name="robots" content="index, follow" />
-
-  <meta property="og:title" content="AutoMax — Automação com Python" />
-  <meta property="og:description" content="Automatizo tarefas chatas. Você foca no que faz dinheiro." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://via.placeholder.com/1200x630/0f0f10/e11b23?text=AutoMax" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="AutoMax — Automação com Python" />
-  <meta name="twitter:description" content="Automatizo tarefas chatas. Você foca no que faz dinheiro." />
-
+  <!-- M: Meta tag de palavras-chave para SEO -->
+  <meta name="keywords" content="automação, python, bots, whatsapp, relatórios automáticos, raspagem de dados" /><!-- M: Meta tag de palavras-chave para SEO -->
+  <!-- M: Meta tag de autor -->
+  <meta name="author" content="AutoMax" /><!-- M: Meta tag de autor -->
+  <!-- M: Meta tag para indexação de mecanismos de busca -->
+  <meta name="robots" content="index, follow" /><!-- M: Meta tag para indexação de mecanismos de busca -->
+  
+  <!-- M: Open Graph tags para compartilhamento em redes sociais (Facebook, LinkedIn) -->
+  <meta property="og:title" content="AutoMax — Automação com Python" /><!-- M: Título para redes sociais -->
+  <meta property="og:description" content="Automatizo tarefas chatas. Você foca no que faz dinheiro." /><!-- M: Descrição para redes sociais -->
+  <meta property="og:type" content="website" /><!-- M: Tipo de conteúdo -->
+  <meta property="og:image" content="https://via.placeholder.com/1200x630/0f0f10/e11b23?text=AutoMax" /><!-- M: Imagem de preview para redes sociais -->
+  
+  <!-- M: Twitter Card tags para compartilhamento no Twitter -->
+  <meta name="twitter:card" content="summary_large_image" /><!-- M: Tipo de card do Twitter -->
+  <meta name="twitter:title" content="AutoMax — Automação com Python" /><!-- M: Título para Twitter -->
+  <meta name="twitter:description" content="Automatizo tarefas chatas. Você foca no que faz dinheiro." /><!-- M: Descrição para Twitter -->
+  
+ 
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="style.css">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "AutoMax",
-    "description": "Serviços de automação com Python",
-    "url": "https://automax.com.br",
-    "telephone": "+55-12-98887-2980",
-    "priceRange": "R$300 - R$5000",
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "BR"
-    }
-  }
-  </script>
+  
+  <!-- M: Preconnect para Google Fonts para melhorar performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><!-- M: Preconnect Google Fonts para performance -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><!-- M: Preconnect Google Fonts CDN -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" /><!-- M: Importação da fonte Inter -->
+  
+  <!-- M: Link para arquivo CSS usando caminho relativo (compatível GitHub Pages) -->
+  <link rel="stylesheet" href="style.css"><!-- M: Link CSS com caminho relativo -->
+  
+  <!-- M: Structured data (JSON-LD) para SEO e rich snippets do Google -->
+  <script type="application/ld+json"><!-- M: Início do structured data -->
+  {<!-- M: Objeto JSON-LD -->
+    "@context": "https://schema.org",<!-- M: Contexto do schema.org -->
+    "@type": "LocalBusiness",<!-- M: Tipo de negócio local -->
+    "name": "AutoMax",<!-- M: Nome do negócio -->
+    "description": "Serviços de automação com Python",<!-- M: Descrição do negócio -->
+    "url": "https://automax.com.br",<!-- M: URL do site -->
+    "telephone": "+55-12-98887-2980",<!-- M: Telefone de contato -->
+    "priceRange": "R$300 - R$5000",<!-- M: Faixa de preço dos serviços -->
+    "address": {<!-- M: Endereço do negócio -->
+      "@type": "PostalAddress",<!-- M: Tipo de endereço -->
+      "addressCountry": "BR"<!-- M: País (Brasil) -->
+    }<!-- M: Fim do objeto endereço -->
+  }<!-- M: Fim do objeto JSON-LD -->
+  </script><!-- M: Fim do structured data -->
 </head>
 <body>
-
-  <div class="loading-overlay" id="loadingOverlay">
-    <div class="loading-spinner"></div>
-  </div>
-
+  <!-- M: Overlay de loading que aparece ao carregar a página -->
+  <div class="loading-overlay" id="loadingOverlay"><!-- M: Div do overlay de loading -->
+    <div class="loading-spinner"></div><!-- M: Spinner animado de loading -->
+  </div><!-- M: Fim do overlay de loading -->
+  
   <div class="wrap">
     <header>
       <div class="brand">
         <div class="logo">
-          <img src="logo2.png" alt="AutoMax Logo">
-        </div>
+  <img src="logo2.png" alt="AutoMax Logo">
+</div>
         <div>
           <h1>AutoMax</h1>
           <div class="small muted">Automação com Python — rápida e direta</div>
@@ -66,15 +75,16 @@
     </header>
 
     <main>
-
+      <!-- HERO -->
       <section class="hero" aria-label="Hero">
         <div class="hero-left">
           <div class="kicker">AutoMax — Automatiza e liberta</div>
           <h2 class="hero-title">Automatizo tarefas chatas. Você foca no que faz dinheiro.</h2>
           <p class="hero-sub">Chega de copiar/colar. Scripts leves em Python que fazem o trabalho repetitivo, sem drama.</p>
           <div class="hero-ctas">
-            <a class="btn" href="#contato" data-testid="hero-cta-primary">Quero automatizar agora</a>
-            <a class="btn ghost" href="#exemplos" data-testid="hero-cta-secondary">Ver demos</a>
+            <!-- M: Data-testid adicionado para testes automatizados -->
+            <a class="btn" href="#contato" data-testid="hero-cta-primary">Quero automatizar agora</a><!-- M: Botão CTA principal com data-testid -->
+            <a class="btn ghost" href="#exemplos" data-testid="hero-cta-secondary">Ver demos</a><!-- M: Botão CTA secundário com data-testid -->
           </div>
 
           <div style="margin-top:18px" class="small">
@@ -110,11 +120,357 @@
                 </div>
               </div>
             </div>
+
+            <div style="display:flex;gap:10px;align-items:center;justify-content:space-between">
+              <div>
+                <div class="pill">Comece com demo</div>
+                <div class="small muted" style="margin-top:6px">Mostre ao dono o resultado sem vender nada.</div>
+              </div>
+              <div style="text-align:right">
+                <div style="font-weight:800;font-size:18px">Rápido</div>
+                <div class="small muted">Entrega em dias</div>
+              </div>
+            </div>
           </div>
         </aside>
       </section>
 
-      <!-- resto do HTML continua igual, só sem comentários -->
+      <!-- M: Nova seção de métricas com 4 cards estatísticos -->
+      <section class="metrics-section" aria-label="Métricas" data-testid="metrics-section"><!-- M: Seção de métricas com ARIA label -->
+        <div class="metrics-grid"><!-- M: Grid responsivo de métricas -->
+          <div class="metric-card"><!-- M: Card de métrica individual -->
+            <div class="metric-number">50+</div><!-- M: Número da métrica com gradiente -->
+            <div class="metric-label">Automações criadas</div><!-- M: Label descritivo da métrica -->
+          </div><!-- M: Fim do card de métrica -->
+          <div class="metric-card"><!-- M: Card de métrica individual -->
+            <div class="metric-number">200h</div><!-- M: Horas economizadas por mês -->
+            <div class="metric-label">Economizadas/mês</div><!-- M: Label da métrica -->
+          </div><!-- M: Fim do card -->
+          <div class="metric-card"><!-- M: Card de métrica individual -->
+            <div class="metric-number">98%</div><!-- M: Taxa de sucesso -->
+            <div class="metric-label">Taxa de sucesso</div><!-- M: Label da métrica -->
+          </div><!-- M: Fim do card -->
+          <div class="metric-card"><!-- M: Card de métrica individual -->
+            <div class="metric-number">3 dias</div><!-- M: Tempo médio de entrega -->
+            <div class="metric-label">Entrega média</div><!-- M: Label da métrica -->
+          </div><!-- M: Fim do card -->
+        </div><!-- M: Fim do grid de métricas -->
+      </section><!-- M: Fim da seção de métricas -->
+
+      <!-- O QUE FAÇO -->
+      <section aria-label="O que eu faço" style="margin-top:8px">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px">
+          <h2 style="margin:0">O que eu faço</h2>
+          <div class="small muted">Soluções enxutas, sem sistema pesado.</div>
+        </div>
+
+        <div class="grid-2" style="gap:18px">
+          <div style="background:var(--card);padding:16px;border-radius:12px">
+            <p class="small muted">Eu transformo tarefas repetitivas em scripts que rodam sozinhos — você só confere o resultado.</p>
+            <ul style="margin:12px 0 0 18px;color:var(--muted)">
+              <li>Relatórios automáticos (Excel → PDF → E-mail)</li>
+              <li>Bots de WhatsApp para lembretes e confirmação</li>
+              <li>Raspagem de preços e atualização</li>
+              <li>Organização automática de pastas e notas fiscais</li>
+              <li>Cadastros automáticos e integrações simples</li>
+            </ul>
+          </div>
+          <div style="background:var(--card);padding:16px;border-radius:12px">
+            <h3 style="margin:0 0 8px 0">Quem se beneficia</h3>
+            <p class="small muted" style="margin:0 0 12px 0">Lojas, restaurantes, clínicas, contabilidade, e qualquer negócio que repete processos todos os dias.</p>
+            <div style="display:flex;gap:8px;flex-wrap:wrap">
+              <div class="pill">Economia de tempo</div>
+              <div class="pill">Menos erro humano</div>
+              <div class="pill">Entrega rápida</div>
+              <div class="pill">Baixo custo inicial</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXEMPLOS -->
+      <section id="exemplos" aria-label="Exemplos de automação" style="margin-top:18px">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+          <h2 style="margin:0">Exemplos de automações</h2>
+          <div class="small muted">Demos curtas — substitua os vídeos pelos seus.</div>
+        </div>
+
+        <div class="cards" style="margin-bottom:12px">
+          <!-- M: Card de exemplo com data-testid para testes -->
+          <article class="card" aria-labelledby="r1" data-testid="example-card-1"><!-- M: Card de exemplo 1 com ARIA -->
+            <h3 id="r1">Automação de Relatórios</h3>
+            <p>Planilha → script → PDF enviado por e-mail todo dia.</p>
+            <!-- M: Placeholder de vídeo clicável com ícone de play -->
+            <div class="video-placeholder" data-video="report_demo.mp4"><!-- M: Placeholder para vídeo de demo -->
+              <div class="video-icon">▶</div><!-- M: Ícone de play -->
+              <span>Clique para ver demo</span><!-- M: Texto do placeholder -->
+            </div><!-- M: Fim do placeholder -->
+            <!-- M: Elemento de vídeo inicialmente oculto -->
+            <video controls muted playsinline poster="" preload="metadata" style="display:none"><!-- M: Vídeo oculto inicialmente -->
+              <!-- M: Source com caminho relativo para compatibilidade GitHub Pages -->
+              <source src="demos/report_demo.mp4" type="video/mp4" /><!-- M: Source do vídeo com caminho relativo -->
+              Seu navegador não suporta o elemento de vídeo.
+            </video>
+          </article>
+
+          <article class="card" aria-labelledby="r2" data-testid="example-card-2"><!-- M: Card de exemplo 2 -->
+            <h3 id="r2">Bot de WhatsApp</h3>
+            <p>Enviar lembretes e confirmações diretamente pelo WhatsApp Web / API.</p>
+            <div class="video-placeholder" data-video="whatsapp_demo.mp4"><!-- M: Placeholder para vídeo -->
+              <div class="video-icon">▶</div><!-- M: Ícone de play -->
+              <span>Clique para ver demo</span><!-- M: Texto do placeholder -->
+            </div><!-- M: Fim do placeholder -->
+            <video controls muted playsinline preload="metadata" style="display:none"><!-- M: Vídeo oculto -->
+              <source src="demos/whatsapp_demo.mp4" type="video/mp4" /><!-- M: Source com caminho relativo -->
+            </video>
+          </article>
+
+          <article class="card" aria-labelledby="r3" data-testid="example-card-3"><!-- M: Card de exemplo 3 -->
+            <h3 id="r3">Raspagem de Preços</h3>
+            <p>Coleta de preços da concorrência e geração de planilha com resumo.</p>
+            <div class="video-placeholder" data-video="scrape_demo.mp4"><!-- M: Placeholder para vídeo -->
+              <div class="video-icon">▶</div><!-- M: Ícone de play -->
+              <span>Clique para ver demo</span><!-- M: Texto do placeholder -->
+            </div><!-- M: Fim do placeholder -->
+            <video controls muted playsinline preload="metadata" style="display:none"><!-- M: Vídeo oculto -->
+              <source src="demos/scrape_demo.mp4" type="video/mp4" /><!-- M: Source com caminho relativo -->
+            </video>
+          </article>
+        </div>
+
+        <div class="cards" style="margin-top:12px">
+          <article class="card" aria-labelledby="r4" data-testid="example-card-4"><!-- M: Card de exemplo 4 -->
+            <h3 id="r4">Organizador de Pastas</h3>
+            <p>Monitora pasta e organiza arquivos automaticamente por tipo/data.</p>
+            <div class="video-placeholder" data-video="organizer_demo.mp4"><!-- M: Placeholder para vídeo -->
+              <div class="video-icon">▶</div><!-- M: Ícone de play -->
+              <span>Clique para ver demo</span><!-- M: Texto do placeholder -->
+            </div><!-- M: Fim do placeholder -->
+            <video controls muted playsinline preload="metadata" style="display:none"><!-- M: Vídeo oculto -->
+              <source src="demos/organizer_demo.mp4" type="video/mp4" /><!-- M: Source com caminho relativo -->
+            </video>
+          </article>
+
+          <article class="card" aria-labelledby="r5" data-testid="example-card-5"><!-- M: Card de exemplo 5 -->
+            <h3 id="r5">Cadastro Automático</h3>
+            <p>Planilha → formulário / sistema, sem copiar e colar.</p>
+            <div class="video-placeholder" data-video="cad_demo.mp4"><!-- M: Placeholder para vídeo -->
+              <div class="video-icon">▶</div><!-- M: Ícone de play -->
+              <span>Clique para ver demo</span><!-- M: Texto do placeholder -->
+            </div><!-- M: Fim do placeholder -->
+            <video controls muted playsinline preload="metadata" style="display:none"><!-- M: Vídeo oculto -->
+              <source src="demos/cad_demo.mp4" type="video/mp4" /><!-- M: Source com caminho relativo -->
+            </video>
+          </article>
+
+          <article class="card" aria-labelledby="r6" data-testid="example-card-6"><!-- M: Card de exemplo 6 -->
+            <h3 id="r6">Relatório Financeiro</h3>
+            <p>Extrato CSV → análise → PDF com gráficos prontos.</p>
+            <div class="video-placeholder" data-video="finance_demo.mp4"><!-- M: Placeholder para vídeo -->
+              <div class="video-icon">▶</div><!-- M: Ícone de play -->
+              <span>Clique para ver demo</span><!-- M: Texto do placeholder -->
+            </div><!-- M: Fim do placeholder -->
+            <video controls muted playsinline preload="metadata" style="display:none"><!-- M: Vídeo oculto -->
+              <source src="demos/finance_demo.mp4" type="video/mp4" /><!-- M: Source com caminho relativo -->
+            </video>
+          </article>
+        </div>
+      </section>
+
+      <!-- M: Nova seção de depoimentos de clientes -->
+      <section class="testimonials-section" aria-label="Depoimentos" data-testid="testimonials-section"><!-- M: Seção de depoimentos com ARIA -->
+        <h2 style="text-align:center;margin-bottom:24px">O que os clientes dizem</h2>
+        <div class="testimonials-grid"><!-- M: Grid de depoimentos -->
+          <div class="testimonial-card"><!-- M: Card de depoimento individual -->
+            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div><!-- M: 5 estrelas de avaliação -->
+            <p class="testimonial-text">"Economizei 15 horas por semana com o bot de relatórios. Agora posso focar em vendas!"</p><!-- M: Texto do depoimento -->
+            <div class="testimonial-author"><!-- M: Autor do depoimento -->
+              <strong>João Silva</strong><!-- M: Nome do cliente -->
+              <span class="small muted">Dono de e-commerce</span><!-- M: Cargo/empresa do cliente -->
+            </div><!-- M: Fim do autor -->
+          </div><!-- M: Fim do card de depoimento -->
+          
+          <div class="testimonial-card"><!-- M: Card de depoimento 2 -->
+            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div><!-- M: 5 estrelas -->
+            <p class="testimonial-text">"O bot de WhatsApp reduziu nossos no-shows em 80%. Investimento que se pagou em 1 mês."</p><!-- M: Texto do depoimento -->
+            <div class="testimonial-author"><!-- M: Autor -->
+              <strong>Maria Costa</strong><!-- M: Nome do cliente -->
+              <span class="small muted">Clínica odontológica</span><!-- M: Cargo/empresa -->
+            </div><!-- M: Fim do autor -->
+          </div><!-- M: Fim do card -->
+          
+          <div class="testimonial-card"><!-- M: Card de depoimento 3 -->
+            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div><!-- M: 5 estrelas -->
+            <p class="testimonial-text">"Raspagem de preços automatizada. Agora sei exatamente quando ajustar nossos valores."</p><!-- M: Texto do depoimento -->
+            <div class="testimonial-author"><!-- M: Autor -->
+              <strong>Pedro Almeida</strong><!-- M: Nome do cliente -->
+              <span class="small muted">Loja de eletrônicos</span><!-- M: Cargo/empresa -->
+            </div><!-- M: Fim do autor -->
+          </div><!-- M: Fim do card -->
+        </div><!-- M: Fim do grid de depoimentos -->
+      </section><!-- M: Fim da seção de depoimentos -->
+
+      <!-- COMO FUNCIONA -->
+      <section aria-label="Como funciona" style="margin-top:18px">
+        <h2>Como funciona</h2>
+        <div class="steps" style="margin-top:12px">
+          <div class="step">
+            <strong>1. Você descreve a tarefa</strong>
+            <p class="small muted">Envie uma planilha ou explique o processo. Pode ser mensagem curta.</p>
+          </div>
+          <div class="step">
+            <strong>2. Eu crio a automação</strong>
+            <p class="small muted">Script em Python, teste local e vídeo demonstrativo pra você aprovar.</p>
+          </div>
+          <div class="step">
+            <strong>3. Entrega & suporte</strong>
+            <p class="small muted">Instalo/entrego script + instruções. Suporte inicial para colocar pra rodar.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- M: Nova seção de FAQ com accordion interativo -->
+      <section class="faq-section" aria-label="Perguntas Frequentes" data-testid="faq-section"><!-- M: Seção de FAQ com ARIA -->
+        <h2 style="text-align:center;margin-bottom:24px">Perguntas Frequentes</h2>
+        <div class="faq-container"><!-- M: Container do FAQ -->
+          <div class="faq-item"><!-- M: Item de FAQ individual -->
+            <!-- M: Botão de pergunta com ARIA expanded para acessibilidade -->
+            <button class="faq-question" aria-expanded="false" data-testid="faq-question-1"><!-- M: Botão de pergunta do FAQ -->
+              <span>Quanto tempo leva para criar uma automação?</span><!-- M: Texto da pergunta -->
+              <span class="faq-icon">+</span><!-- M: Ícone + que rotaciona ao abrir -->
+            </button><!-- M: Fim do botão -->
+            <div class="faq-answer"><!-- M: Resposta do FAQ (inicialmente oculta) -->
+              <p>Geralmente entre 2 a 5 dias úteis, dependendo da complexidade. Automações simples podem ficar prontas em 24-48h.</p><!-- M: Texto da resposta -->
+            </div><!-- M: Fim da resposta -->
+          </div><!-- M: Fim do item de FAQ -->
+          
+          <div class="faq-item"><!-- M: Item de FAQ 2 -->
+            <button class="faq-question" aria-expanded="false" data-testid="faq-question-2"><!-- M: Botão de pergunta -->
+              <span>Preciso ter conhecimento técnico?</span><!-- M: Texto da pergunta -->
+              <span class="faq-icon">+</span><!-- M: Ícone + -->
+            </button><!-- M: Fim do botão -->
+            <div class="faq-answer"><!-- M: Resposta -->
+              <p>Não! Eu entrego tudo pronto e configurado. Forneço instruções simples e suporte para você começar a usar.</p><!-- M: Texto da resposta -->
+            </div><!-- M: Fim da resposta -->
+          </div><!-- M: Fim do item -->
+          
+          <div class="faq-item"><!-- M: Item de FAQ 3 -->
+            <button class="faq-question" aria-expanded="false" data-testid="faq-question-3"><!-- M: Botão de pergunta -->
+              <span>Qual o investimento inicial?</span><!-- M: Texto da pergunta -->
+              <span class="faq-icon">+</span><!-- M: Ícone + -->
+            </button><!-- M: Fim do botão -->
+            <div class="faq-answer"><!-- M: Resposta -->
+              <p>A partir de R$ 300 para automações simples. O valor varia conforme a complexidade. Fazemos orçamento sem compromisso.</p><!-- M: Texto da resposta -->
+            </div><!-- M: Fim da resposta -->
+          </div><!-- M: Fim do item -->
+          
+          <div class="faq-item"><!-- M: Item de FAQ 4 -->
+            <button class="faq-question" aria-expanded="false" data-testid="faq-question-4"><!-- M: Botão de pergunta -->
+              <span>E se precisar de ajustes depois?</span><!-- M: Texto da pergunta -->
+              <span class="faq-icon">+</span><!-- M: Ícone + -->
+            </button><!-- M: Fim do botão -->
+            <div class="faq-answer"><!-- M: Resposta -->
+              <p>Inclui suporte inicial gratuito por 15 dias. Depois disso, oferecemos planos de manutenção mensal ou ajustes avulsos.</p><!-- M: Texto da resposta -->
+            </div><!-- M: Fim da resposta -->
+          </div><!-- M: Fim do item -->
+          
+          <div class="faq-item"><!-- M: Item de FAQ 5 -->
+            <button class="faq-question" aria-expanded="false" data-testid="faq-question-5"><!-- M: Botão de pergunta -->
+              <span>Funciona com qualquer sistema?</span><!-- M: Texto da pergunta -->
+              <span class="faq-icon">+</span><!-- M: Ícone + -->
+            </button><!-- M: Fim do botão -->
+            <div class="faq-answer"><!-- M: Resposta -->
+              <p>Python é muito versátil! Funciona com Excel, Google Sheets, APIs, sites, bancos de dados, WhatsApp e muito mais.</p><!-- M: Texto da resposta -->
+            </div><!-- M: Fim da resposta -->
+          </div><!-- M: Fim do item -->
+          
+          <div class="faq-item"><!-- M: Item de FAQ 6 -->
+            <button class="faq-question" aria-expanded="false" data-testid="faq-question-6"><!-- M: Botão de pergunta -->
+              <span>Posso ver uma demo antes de contratar?</span><!-- M: Texto da pergunta -->
+              <span class="faq-icon">+</span><!-- M: Ícone + -->
+            </button><!-- M: Fim do botão -->
+            <div class="faq-answer"><!-- M: Resposta -->
+              <p>Sim! Para projetos acima de R$ 500, posso criar uma demo funcional para você avaliar antes de fechar.</p><!-- M: Texto da resposta -->
+            </div><!-- M: Fim da resposta -->
+          </div><!-- M: Fim do item -->
+        </div><!-- M: Fim do container do FAQ -->
+      </section><!-- M: Fim da seção de FAQ -->
+
+      <!-- CTA -->
+      <section style="margin-top:18px">
+        <div class="cta-block">
+          <div>
+            <h3 style="margin:0">Quer economizar tempo de verdade?</h3>
+            <div class="small muted">Clique e manda uma mensagem com: "Quero automatizar [descrição curta]"</div>
+          </div>
+          <div style="display:flex;gap:8px">
+            <!-- M: Botão de WhatsApp com data-testid -->
+            <a class="btn" id="whatsappBtn" href="#" data-testid="cta-whatsapp">Chamar no WhatsApp</a><!-- M: Botão WhatsApp com data-testid -->
+            <a class="btn ghost" href="#exemplos">Ver demos</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTATO -->
+      <section id="contato" aria-label="Contato" style="margin-top:18px">
+        <h2>Falar com a AutoMax</h2>
+        <div style="display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:12px">
+          <!-- M: Formulário de contato com data-testid e validação -->
+          <form id="contactForm" style="background:var(--card);padding:16px;border-radius:12px" data-testid="contact-form"><!-- M: Form com data-testid -->
+            <label class="small muted" for="name">Seu nome</label>
+            <!-- M: Input de nome com data-testid para testes -->
+            <input id="name" name="name" required placeholder="Ex: João" style="width:100%;padding:10px;margin:8px 0;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:#fff" data-testid="input-name" /><!-- M: Input de nome com data-testid -->
+            <!-- M: Span para mensagem de erro do campo nome -->
+            <span class="error-message" id="nameError"></span><!-- M: Mensagem de erro do nome -->
+
+            <label class="small muted" for="email">E-mail (opcional)</label>
+            <!-- M: Input de email com data-testid -->
+            <input id="email" name="email" type="email" placeholder="exemplo@dominio.com" style="width:100%;padding:10px;margin:8px 0;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:#fff" data-testid="input-email" /><!-- M: Input de email com data-testid -->
+            <!-- M: Span para mensagem de erro do campo email -->
+            <span class="error-message" id="emailError"></span><!-- M: Mensagem de erro do email -->
+
+            <label class="small muted" for="message">O que quer automatizar? (resumo)</label>
+            <!-- M: Textarea de mensagem com data-testid -->
+            <textarea id="message" name="message" rows="5" required placeholder="Ex: Quero gerar relatório diário das vendas..." style="width:100%;padding:10px;margin:8px 0;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:#fff" data-testid="input-message"></textarea><!-- M: Textarea com data-testid -->
+            <!-- M: Span para mensagem de erro do campo mensagem -->
+            <span class="error-message" id="messageError"></span><!-- M: Mensagem de erro da mensagem -->
+
+            <div style="display:flex;gap:8px;align-items:center;margin-top:8px">
+              <!-- M: Botão submit com spans para loading state -->
+              <button type="submit" class="btn" data-testid="submit-button"><!-- M: Botão submit com data-testid -->
+                <span class="btn-text">Enviar mensagem</span><!-- M: Texto padrão do botão -->
+                <span class="btn-loading" style="display:none">Enviando...</span><!-- M: Texto de loading (oculto) -->
+              </button>
+              <div class="small muted">ou</div>
+              <!-- M: Link inline do WhatsApp com data-testid -->
+              <a id="whatsappInline" class="btn" href="https://wa.me/5512988872980" data-testid="whatsapp-inline">Abrir no WhatsApp</a><!-- M: Link WhatsApp inline -->
+            </div>
+            
+            <!-- M: Div de mensagem de sucesso inicialmente oculta -->
+            <div class="success-message" id="formSuccess" style="display:none"><!-- M: Mensagem de sucesso oculta -->
+              ✅ Mensagem enviada com sucesso! Em breve entraremos em contato.<!-- M: Texto de sucesso -->
+            </div><!-- M: Fim da mensagem de sucesso -->
+
+            <div class="small muted" style="margin-top:10px">Recebe resposta no WhatsApp ou no e-mail. Sem enrolação.</div>
+          </form>
+
+          <aside style="background:var(--card);padding:16px;border-radius:12px">
+            <h3 style="margin:0 0 8px 0">Detalhes rápidos</h3>
+            <p class="small muted" style="margin:0 0 12px 0">Preço inicial de prova: a partir de R$300 (dependendo da automação).</p>
+            <ul class="small muted" style="margin:0 0 12px 18px">
+              <li>Entrega de prova em até alguns dias</li>
+              <li>Suporte inicial para instalação</li>
+              <li>Opção de manutenção mensal</li>
+            </ul>
+            <div style="margin-top:12px" class="small muted"></div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- M: Botão scroll to top que aparece ao rolar a página -->
+      <button class="scroll-to-top" id="scrollToTop" aria-label="Voltar ao topo" data-testid="scroll-to-top"><!-- M: Botão scroll to top com ARIA e data-testid -->
+        ↑<!-- M: Seta para cima -->
+      </button><!-- M: Fim do botão scroll to top -->
 
       <footer>
         <div>© <strong>AutoMax</strong> — Automação com Python</div>
@@ -122,7 +478,7 @@
       </footer>
     </main>
   </div>
-
-<script src="script.js"></script>
+<!-- M: Script JavaScript com caminho relativo para compatibilidade GitHub Pages -->
+<script src="script.js"></script><!-- M: Link para script.js com caminho relativo -->
 </body>
 </html>
