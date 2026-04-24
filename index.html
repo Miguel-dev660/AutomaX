@@ -42,7 +42,7 @@
     "name": "AutoMax",
     "description": "Serviços de automação com Python",
     "url": "https://automax.com.br",
-    "telephone": "+55-12-98887-2980",
+    "telephone": "5512988872980",
     "priceRange": "R$300 - R$5000",
     "address": {
       "@type": "PostalAddress",
@@ -435,21 +435,16 @@
             
             <span class="error-message" id="messageError"></span>
 
-            <div style="display:flex;gap:8px;align-items:center;margin-top:8px">
-              
-              <button type="submit" class="btn" data-testid="submit-button">
-                <span class="btn-text">Enviar mensagem</span>
-                <span class="btn-loading" style="display:none">Enviando...</span>
+            <div class="contact-actions" style="display:flex;gap:8px;align-items:center;margin-top:8px">
+              <button type="button" class="btn" data-testid="submit-button">
+                <span class="btn-text">Enviar por email</span>
+                <span class="btn-loading" style="display:none">Abrindo...</span>
               </button>
               <div class="small muted">ou</div>
-              
               <a id="whatsappInline" class="btn" href="https://wa.me/5512988872980" data-testid="whatsapp-inline">Abrir no WhatsApp</a>
             </div>
             
-            
-            <div class="success-message" id="formSuccess" style="display:none">
-              ✅ Mensagem enviada com sucesso! Em breve entraremos em contato.
-            </div>
+            <div class="success-message" id="formSuccess" style="display:none"></div>
 
             <div class="small muted" style="margin-top:10px">Receba resposta no WhatsApp ou e-mail. Sem burocracia.</div>
           </form>
@@ -474,7 +469,7 @@
 
       <footer>
         <div>© <strong>AutoMax</strong> — Automação com Python</div>
-        <div class="small muted">Desenvolvido para maximizar sua produtividade.</div>
+        <div class="small muted">Email de suporte: <a href="mailto:automax379@gmail.com">automax379@gmail.com</a></div>
       </footer>
     </main>
   </div>
