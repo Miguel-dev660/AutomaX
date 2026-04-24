@@ -185,45 +185,32 @@ document.getElementById('whatsappInline').addEventListener('click', function(e) 
 });
 
 
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
+document.querySelector('[data-testid="submit-button"]').addEventListener('click', function() {
     const isNameValid = validateName();
     const isEmailValid = validateEmail();
     const isMessageValid = validateMessage();
-    
+
     if (!isNameValid || !isEmailValid || !isMessageValid) {
         return;
     }
-    
-    
-    const submitBtn = this.querySelector('button[type="submit"]');
-    submitBtn.classList.add('loading');
-    submitBtn.disabled = true;
-    
-    
-    setTimeout(() => {
-        const name = document.getElementById('name').value.trim();
-        const message = document.getElementById('message').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const text = `${name ? name + ' - ' : ''}${message}${email ? ' | email: ' + email : ''}`;
-        
-        
-        formSuccess.style.display = 'block';
-        
-        
-        submitBtn.classList.remove('loading');
-        submitBtn.disabled = false;
-        
-        
-        window.open(whatsappLink(text), '_blank');
-        
-        
-        setTimeout(() => {
-            contactForm.reset();
-            formSuccess.style.display = 'none';
-        }, 2000);
-    }, 1000);
+
+    const name = nameInput.value.trim();
+    const message = messageInput.value.trim();
+    const email = emailInput.value.trim();
+    const subject = `Contato AutoMax - ${name || 'Novo cliente'}`;
+    const bodyLines = [
+        `Nome: ${name}`,
+        `E-mail: ${email || 'Não informado'}`,
+        `Mensagem: ${message}`
+    ];
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=automax379@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
+
+    window.open(gmailUrl, '_blank');
+});
+
+
+contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
 });
 
 
@@ -330,4 +317,4 @@ if (window.performance && console.table) {
 console.log('%cAutoMax 🤖', 'font-size: 24px; font-weight: bold; color: #e11b23;');
 console.log('%cSite desenvolvido com melhorias completas!', 'font-size: 14px; color: #bfc4c8;');
 console.log('%c✨ Features: Animações, Validação, FAQ, Depoimentos, Métricas e muito mais!', 'font-size: 12px; color: #4ade80;');
-console.log('%cContato: WhatsApp +55 12 98887-2980', 'font-size: 12px; color: #bfc4c8;');
+console.log('%cContato: WhatsApp 5512988872980', 'font-size: 12px; color: #bfc4c8;');
